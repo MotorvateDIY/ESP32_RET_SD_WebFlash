@@ -1,12 +1,12 @@
 {
-    "name": "ESP32_RET_SD",
+    "name": "ESP32_RET_SD - CAN BUS to SD card or Wifi for SavvyCAN",
     "new_install_prompt_erase": true,
     "builds": [
       {
         "chipFamily": "ESP32",
         "parts": [
           { "path": "boot_app0.bin", "offset": 57344 },
-          { "path": "app.bin", "offset": 65536 },
+          { "path": "firmware.bin", "offset": 65536 },
           { "path": "bootloader.bin", "offset": 4096 },
           { "path": "partitions.bin", "offset": 32768 }
         ]
