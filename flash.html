@@ -1,16 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<body>
-    <h1>ESP32_RET_SD Web Flash</h1>
-    <div id="main" style="display: none;">
+	<head>
+		<title>MotorvateDIY</title>
+		<meta charset="utf-8" />
+<style>
+	h1 {text-align: center;}
+	p {text-align: center;}
+	div {text-align: center;}
+
+  body { background-color: #FF9400; font-family: 'verdana', sans-serif; }
+  h1 { font-size: 20px; }
+  p { font-size: 18px; }
+</style>
+	</head>
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1>ESP Flash Tool</h1>
+					<p>Plug in the MotorvateDIY CAN LOGGER V1.0 board to the computer<br />
+					using a known good USB cable with power and data.</p>
+				<div ><img src="images/sm.jpg" alt="" /></div>
         <br>
         <script
             type="module"
             src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module">
         </script>
-        <esp-web-install-button id="installButton" manifest="webflash/manifest.json"></esp-web-install-button>
-        <br>
-        <span>NOTE: Make sure to close anything using your devices com port (e.g. Serial monitor)</span>
+
+                <span>NOTE: Make sure to close anything using your <br />
+                devices com port (e.g. Serial monitor)</p></span>
+        
+        	<p>Then click on the button below:</p>
+
+        <esp-web-install-button id="installButton" manifest="webflash/manifest.json"><button slot="activate" type="button" >Flash ESP32_RET_SD</button></esp-web-install-button>
+ 
     </div>
     <div id="notSupported" style="display: none;">
         Your browser does not support the Web Serial API. Try Chrome
@@ -24,5 +47,10 @@
             document.getElementById("main").style.display = 'none';
         }
     </script>
-</body>
+			</div>
+			</header>
+
+	
+
+	</body>
 </html>
