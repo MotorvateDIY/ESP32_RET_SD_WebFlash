@@ -4,39 +4,72 @@
 	<head>
 		<title>MotorvateDIY</title>
 		<meta charset="utf-8" />
+		
+
 <style>
 	h1 {text-align: center;}
 	p {text-align: center;}
 	div {text-align: center;}
 
-  body { background-color: #FF9400; font-family: 'verdana', sans-serif; }
+  body { 
+  	background-color: #ddd; 
+  	font-family: 'verdana', sans-serif; 
+  	  margin-top: 25px; 
+  }
+
+
   h1 { font-size: 20px; }
-  p { font-size: 18px; }
+  p { 
+  	font-size: 16px; 
+  	color: #444;
+  	}
+
+ th, td {
+  border:0px solid black;
+   background-color: #04AA6D;
+   padding: 25px;
+}
+
+table {
+  border:0px solid black;
+
+  margin-left: auto; 
+  margin-right: auto;
+}
+
 </style>
 	</head>
 		<!-- Header -->
 			<header id="header">
 				<div class="content">
 					<h1>ESP Flash Tool</h1>
+
+<table >
+  <tr>
+    <td style="width:20%;background-color:#ddd;"></td>
+<td style="width:700px;background-color:#FF9400;">
 					<p>Plug in the MotorvateDIY CAN LOGGER V1.0 board to the computer<br />
 					using a known good USB cable with power and data.</p>
-				<div ><img src="assets/MVG_CAN_logger_sm.jpg" alt="" width="480" /></div>
+
+
+				<div ><img src="images/sm.jpg" alt="Logger"  width="480"/></div>
+
         <br>
         <script
             type="module"
             src="https://unpkg.com/esp-web-tools@7.3.1/dist/web/install-button.js?module">
         </script>
 
-                <span>NOTE: Make sure to close/quit anything using your <br />
-                devices com port (e.g. Serial monitor)</p></span>
+                <p>NOTE: <br>Make sure to close anything using your <br />
+                devices com port (e.g. Serial monitor)</p>
         
-        	<p>When ready, click on the button to flash the ESP32:</p>
+        					<p>Then click on the button below:</p>
 
         <esp-web-install-button id="installButton" manifest="webflash/manifest.json"><button slot="activate" type="button" >Flash ESP32_RET_SD</button></esp-web-install-button>
- 
-    </div>
-    <div id="notSupported" style="display: none;">
-        Your browser does not support the Web Serial API. Try Chrome
+
+    </div><p>
+    <div id="notSupported" style="display: none; color: darkred; background-color: white;"><br><br>
+        Your browser does not support the Web Serial API. <br>Try Google Chrome or Microsoft Edge<p><br>
     </div>
     <script>
         if(navigator.serial){
@@ -47,10 +80,12 @@
             document.getElementById("main").style.display = 'none';
         }
     </script>
-			</div>
-			</header>
 
-	
+			</div>
+</td>
+    <td style="width:20%;background-color:#ddd;"></td>
+
+			</header>
 
 	</body>
 </html>
