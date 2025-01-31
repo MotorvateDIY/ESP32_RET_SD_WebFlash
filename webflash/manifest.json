@@ -1,5 +1,5 @@
 {
-    "name": "ESP32_RET_SD - CAN BUS to SD card or Wifi for SavvyCAN",
+    "name": "ESP32_RET_SD",
     "new_install_prompt_erase": true,
     "builds": [
       {
